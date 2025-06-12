@@ -1,0 +1,441 @@
+* Welcome to use LogServer.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting log server with follow configs ...
+ conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-06-11T12:12:36.436314 I 11552] [launch_sv.cpp:493] log server starting... conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-06-11T12:12:36.438243 I 11552] [log_instance.h:141] This raft node conf_ is 127.0.0.1:9000:0
+[2025-06-11T12:12:36.447224 I 11552] [log_instance.h:218] starting log instance at 127.0.0.1:9000
+[2025-06-11T12:12:36.447271 I 11552] [log_instance.h:221] starting log_state
+[2025-06-11T12:12:36.447520 I 11552] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-06-11T12:12:36.523231 I 11552] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-06-11T12:12:36.523339 I 11552] [log_instance.h:247] initializing raft node
+[2025-06-11T12:12:36.523397 I 11552] [log_instance.h:268] This raft node initial conf is 127.0.0.1:9000:0:0
+[2025-06-11T12:12:36.524580 I 11582] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-06-11T12:12:36.524623 I 11552] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-06-11T12:12:36.524689 W 11552] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-06-11T12:12:36.524708 W 11552] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log is empty
+[2025-06-11T12:12:36.529397 I 11552] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta first_log_index: 1 time: 4648
+[2025-06-11T12:12:36.529754 W 11552] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-06-11T12:12:36.529829 I 11552] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 65
+[2025-06-11T12:12:36.529866 I 11552] [node.cpp:628] node lg0:127.0.0.1:9000:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:9000:0:0 old_conf: 
+[2025-06-11T12:12:36.529937 I 11552] [node.cpp:1692] node lg0:127.0.0.1:9000:0:0 term 1 start vote and grant vote self
+[2025-06-11T12:12:36.535395 I 11552] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 2 votedfor 127.0.0.1:9000:0:0 time: 5410
+[2025-06-11T12:12:36.535454 I 11552] [node.cpp:1956] node lg0:127.0.0.1:9000:0:0 term 2 become leader of group 127.0.0.1:9000:0:0 
+[2025-06-11T12:12:36.537703 I 11557] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_inprogress_00000000000000000001' with fd=10
+[2025-06-11T12:12:36.540870 I 11552] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=9000.
+[2025-06-11T12:12:36.544514 I 11562] [node.cpp:3354] node lg0:127.0.0.1:9000:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:9000:0:0, old_peers: 127.0.0.1:9000:0:0
+[2025-06-11T12:12:36.544574 I 11562] [log_instance.h:465] Log node 127.0.0.1:9000 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-06-11T12:12:36.540906 I 11552] [server.cpp:1132] Check out http://7f426fa2-da6e-4cf5-7e91-aa5267fb0738:9000 in web browser.
+[2025-06-11T12:12:36.546495 I 11552] [log_server.cpp:165] Raft Service is running on 0.0.0.0:9000
+LogServer Started, listenning on port 9000.
+[2025-06-11T12:12:42.912344 I 11563] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:12:42.912397 I 11563] [log_state.h:834] Updating node group term, ng:2,term:2
+[2025-06-11T12:12:42.912420 I 11563] [log_state.h:875] Create a new leader info
+[2025-06-11T12:12:42.912432 I 11563] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 2 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-06-11T12:12:42.912442 I 11563] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-06-11T12:12:42.912453 I 11563] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:12:42.912462 I 11563] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-06-11T12:12:42.912472 I 11563] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:12:42.912482 I 11563] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:12:42.912652 I 11563] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:12:42.912928 I 11706] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 2 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-06-11T12:12:42.914469 I 11706] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 2
+[2025-06-11T12:12:42.915453 I 11706] [log_shipping_agent.h:362] thread: 140736188106496 send log item list to replay service of cc node group: 2, term: 2
+[2025-06-11T12:12:42.915508 I 11706] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 2, term: 2 finished, sent 0 messages, took 57 microseconds, 0 eagains
+[2025-06-11T12:12:42.972191 I 11563] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:12:42.972235 I 11563] [log_state.h:834] Updating node group term, ng:1,term:2
+[2025-06-11T12:12:42.972249 I 11563] [log_state.h:875] Create a new leader info
+[2025-06-11T12:12:42.972259 I 11563] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-06-11T12:12:42.972270 I 11563] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-06-11T12:12:42.972280 I 11563] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:12:42.972290 I 11563] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-06-11T12:12:42.972301 I 11563] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:12:42.972311 I 11563] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:12:42.973001 I 11563] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:12:42.973030 I 11708] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-06-11T12:12:42.973500 I 11708] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-06-11T12:12:42.973524 I 11708] [log_shipping_agent.h:362] thread: 140736178661120 send log item list to replay service of cc node group: 1, term: 2
+[2025-06-11T12:12:42.973577 I 11708] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 2 finished, sent 0 messages, took 51 microseconds, 0 eagains
+[2025-06-11T12:12:43.514097 I 11557] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:12:43.514138 I 11557] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-06-11T12:12:43.514259 I 11557] [log_state.h:875] Create a new leader info
+[2025-06-11T12:12:43.514272 I 11557] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-06-11T12:12:43.514283 I 11557] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-06-11T12:12:43.514294 I 11557] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:12:43.514402 I 11557] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-06-11T12:12:43.514417 I 11557] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:12:43.514427 I 11557] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:12:43.514845 I 11557] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:12:43.517802 I 11711] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-06-11T12:12:43.519788 I 11711] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-06-11T12:12:43.519820 I 11711] [log_shipping_agent.h:362] thread: 140736168163072 send log item list to replay service of cc node group: 0, term: 2
+[2025-06-11T12:12:43.519876 I 11711] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 55 microseconds, 0 eagains
+[2025-06-11T12:12:43.993476 I 11563] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:12:43.993518 I 11563] [log_state.h:834] Updating node group term, ng:1,term:3
+[2025-06-11T12:12:43.993532 I 11563] [log_state.h:848] Update leader_info.term_:2 to: 3
+[2025-06-11T12:12:43.993543 I 11563] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-06-11T12:12:43.993553 I 11563] [log_state.h:852] Update leader_info.leader_port_17482 to: 17582
+[2025-06-11T12:12:43.993566 I 11563] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 3 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-06-11T12:12:43.993577 I 11563] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-06-11T12:12:43.993588 I 11563] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:12:43.993598 I 11563] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-06-11T12:12:43.993609 I 11563] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:12:43.993618 I 11563] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:12:43.993875 I 11766] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-06-11T12:12:43.993881 I 11563] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:12:43.995208 I 11766] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-06-11T12:12:43.995236 I 11766] [log_shipping_agent.h:362] thread: 140736158717696 send log item list to replay service of cc node group: 1, term: 3
+[2025-06-11T12:12:43.995287 I 11766] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 3 finished, sent 0 messages, took 50 microseconds, 0 eagains
+[2025-06-11T12:12:44.404135 I 11558] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:12:44.404182 I 11558] [log_state.h:834] Updating node group term, ng:2,term:3
+[2025-06-11T12:12:44.404194 I 11558] [log_state.h:848] Update leader_info.term_:2 to: 3
+[2025-06-11T12:12:44.404206 I 11558] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-06-11T12:12:44.404215 I 11558] [log_state.h:852] Update leader_info.leader_port_17482 to: 17682
+[2025-06-11T12:12:44.404225 I 11558] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 2 term: 3 ip: 127.0.0.1 port: 17682 term match? yes
+[2025-06-11T12:12:44.404237 I 11558] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17682
+[2025-06-11T12:12:44.404248 I 11558] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:12:44.404259 I 11558] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-06-11T12:12:44.404269 I 11558] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:12:44.404279 I 11558] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:12:44.404469 I 11768] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 2 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:12:44.404479 I 11558] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:12:44.406103 I 11768] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 2
+[2025-06-11T12:12:44.406145 I 11768] [log_shipping_agent.h:362] thread: 140736178661120 send log item list to replay service of cc node group: 2, term: 3
+[2025-06-11T12:12:44.406199 I 11768] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 2, term: 3 finished, sent 0 messages, took 53 microseconds, 0 eagains
+[2025-06-11T12:12:46.600410 I 11563] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:12:46.600455 I 11563] [log_state.h:834] Updating node group term, ng:0,term:3
+[2025-06-11T12:12:46.600468 I 11563] [log_state.h:848] Update leader_info.term_:2 to: 3
+[2025-06-11T12:12:46.600479 I 11563] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-06-11T12:12:46.600488 I 11563] [log_state.h:852] Update leader_info.leader_port_17482 to: 17582
+[2025-06-11T12:12:46.600498 I 11563] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 3 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-06-11T12:12:46.600509 I 11563] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-06-11T12:12:46.600519 I 11563] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:12:46.600528 I 11563] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-06-11T12:12:46.600538 I 11563] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:12:46.600548 I 11563] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:12:46.600654 I 11770] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 3 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-06-11T12:12:46.601220 I 11563] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:12:46.604490 I 11770] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-06-11T12:12:46.604523 I 11770] [log_shipping_agent.h:362] thread: 140736188106496 send log item list to replay service of cc node group: 0, term: 3
+[2025-06-11T12:12:46.604586 I 11770] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 3 finished, sent 0 messages, took 63 microseconds, 0 eagains
+[2025-06-11T12:12:47.683046 I 11588] [socket.cpp:2855] Checking Socket{id=595 remote addr=127.0.0.1:17582 local addr=0.0.0.0:0} (0x7fff7c001040)
+[2025-06-11T12:12:48.673789 I 11588] [socket.cpp:2855] Checking Socket{id=680 remote addr=127.0.0.1:17682 local addr=0.0.0.0:0} (0x7fff84052380)
+* Welcome to use LogServer.
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting log server with follow configs ...
+ conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-06-11T12:12:50.661012 I 11773] [launch_sv.cpp:493] log server starting... conf: 127.0.0.1:9000; start log group id: 0; node_id: 0; raft storage_path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0; 
+[2025-06-11T12:12:50.666953 I 11773] [log_instance.h:141] This raft node conf_ is 127.0.0.1:9000:0
+[2025-06-11T12:12:50.677773 I 11773] [log_instance.h:218] starting log instance at 127.0.0.1:9000
+[2025-06-11T12:12:50.677822 I 11773] [log_instance.h:221] starting log_state
+[2025-06-11T12:12:50.678094 I 11773] [log_state_rocksdb_impl.cpp:334] Starting log state local rocksdb
+[2025-06-11T12:12:50.811028 I 11773] [log_state_rocksdb_impl.cpp:377] local rocksdb started
+[2025-06-11T12:12:50.811136 I 11773] [log_instance.h:247] initializing raft node
+[2025-06-11T12:12:50.811199 I 11773] [log_instance.h:268] This raft node initial conf is 127.0.0.1:9000:0:0
+[2025-06-11T12:12:50.811255 I 11803] [log_state_rocksdb_impl.cpp:502] Sst files size on disk: 0.0MB
+[2025-06-11T12:12:50.811931 I 11773] [log.cpp:790] Use crc32c as the checksum type of appending entries
+[2025-06-11T12:12:50.812001 W 11773] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta: FILE_ERROR_NOT_FOUND
+[2025-06-11T12:12:50.812031 W 11773] [log.cpp:801] /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log is empty
+[2025-06-11T12:12:50.831693 I 11773] [log.cpp:1316] log save_meta /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_meta first_log_index: 1 time: 19619
+[2025-06-11T12:12:50.832084 W 11773] [protobuf_file.cpp:91] open file failed, path: /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta/raft_meta: FILE_ERROR_NOT_FOUND
+[2025-06-11T12:12:50.832140 I 11773] [raft_meta.cpp:521] Loaded single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 1 votedfor 0.0.0.0:0:0:0 time: 44
+[2025-06-11T12:12:50.832176 I 11773] [node.cpp:628] node lg0:127.0.0.1:9000:0:0 init, term: 1 last_log_id: (index=0,term=0) conf: 127.0.0.1:9000:0:0 old_conf: 
+[2025-06-11T12:12:50.832232 I 11773] [node.cpp:1692] node lg0:127.0.0.1:9000:0:0 term 1 start vote and grant vote self
+[2025-06-11T12:12:50.847783 I 11773] [raft_meta.cpp:551] Saved single stable meta, path /tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/raft_meta term 2 votedfor 127.0.0.1:9000:0:0 time: 15487
+[2025-06-11T12:12:50.847852 I 11773] [node.cpp:1956] node lg0:127.0.0.1:9000:0:0 term 2 become leader of group 127.0.0.1:9000:0:0 
+[2025-06-11T12:12:50.852384 I 11773] [server.cpp:1129] Server[braft::RaftStatImpl+braft::FileServiceImpl+braft::RaftServiceImpl+braft::CliServiceImpl+txlog::LogServiceImpl] is serving on port=9000.
+[2025-06-11T12:12:50.852424 I 11773] [server.cpp:1132] Check out http://7f426fa2-da6e-4cf5-7e91-aa5267fb0738:9000 in web browser.
+[2025-06-11T12:12:50.852835 I 11773] [log_server.cpp:165] Raft Service is running on 0.0.0.0:9000
+LogServer Started, listenning on port 9000.
+[2025-06-11T12:12:50.854161 I 11781] [log.cpp:116] Created new segment `/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/data_0/0/log/log_inprogress_00000000000000000001' with fd=10
+[2025-06-11T12:12:50.864168 I 11781] [node.cpp:3354] node lg0:127.0.0.1:9000:0:0 reset ConfigurationCtx, new_peers: 127.0.0.1:9000:0:0, old_peers: 127.0.0.1:9000:0:0
+[2025-06-11T12:12:50.864231 I 11781] [log_instance.h:465] Log node 127.0.0.1:9000 becomes the leader of the log group #0, term: 2, leader lease valid? yes
+[2025-06-11T12:13:02.227005 I 11783] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:13:02.227046 I 11783] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-06-11T12:13:02.227061 I 11783] [log_state.h:875] Create a new leader info
+[2025-06-11T12:13:02.227072 I 11783] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17482 term match? yes
+[2025-06-11T12:13:02.227084 I 11783] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17482
+[2025-06-11T12:13:02.227095 I 11783] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:13:02.227106 I 11783] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-06-11T12:13:02.227118 I 11783] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:13:02.227128 I 11783] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:13:02.227299 I 11783] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:13:02.227975 I 12205] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17482
+[2025-06-11T12:13:02.230557 I 12205] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-06-11T12:13:02.230597 I 12205] [log_shipping_agent.h:362] thread: 140736188106496 send log item list to replay service of cc node group: 0, term: 2
+[2025-06-11T12:13:02.230645 I 12205] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 0 messages, took 47 microseconds, 0 eagains
+[2025-06-11T12:13:03.404274 I 11811] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:13:03.404315 I 11811] [log_state.h:834] Updating node group term, ng:1,term:2
+[2025-06-11T12:13:03.404327 I 11811] [log_state.h:875] Create a new leader info
+[2025-06-11T12:13:03.404337 I 11811] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 2 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-06-11T12:13:03.404347 I 11811] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-06-11T12:13:03.404356 I 11811] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:13:03.404366 I 11811] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-06-11T12:13:03.404376 I 11811] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:13:03.404384 I 11811] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:13:03.404513 I 11811] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:13:03.404631 I 12206] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 2 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-06-11T12:13:03.406090 I 12206] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 1
+[2025-06-11T12:13:03.406123 I 12206] [log_shipping_agent.h:362] thread: 140736179713792 send log item list to replay service of cc node group: 1, term: 2
+[2025-06-11T12:13:03.406183 I 12206] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 1, term: 2 finished, sent 0 messages, took 58 microseconds, 0 eagains
+[2025-06-11T12:13:04.388872 I 11811] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:13:04.388922 I 11811] [log_state.h:834] Updating node group term, ng:2,term:2
+[2025-06-11T12:13:04.388934 I 11811] [log_state.h:875] Create a new leader info
+[2025-06-11T12:13:04.388944 I 11811] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 2 term: 2 ip: 127.0.0.1 port: 17682 term match? yes
+[2025-06-11T12:13:04.388955 I 11811] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17682
+[2025-06-11T12:13:04.388965 I 11811] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:13:04.388975 I 11811] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 0
+[2025-06-11T12:13:04.388985 I 11811] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:13:04.388995 I 11811] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:13:04.389124 I 11811] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:13:04.389230 I 12207] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 2 term 2 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:13:04.392377 I 12207] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 2
+[2025-06-11T12:13:04.392417 I 12207] [log_shipping_agent.h:362] thread: 140736170268416 send log item list to replay service of cc node group: 2, term: 2
+[2025-06-11T12:13:04.392490 I 12207] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 2, term: 2 finished, sent 0 messages, took 73 microseconds, 0 eagains
+[2025-06-11T12:13:16.881073 I 11778] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:13:16.881122 I 11778] [log_state.h:834] Updating node group term, ng:3,term:2
+[2025-06-11T12:13:16.881136 I 11778] [log_state.h:875] Create a new leader info
+[2025-06-11T12:13:16.881146 I 11778] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 3 term: 2 ip: 127.0.0.1 port: 17782 term match? yes
+[2025-06-11T12:13:16.881157 I 11778] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17782
+[2025-06-11T12:13:16.881168 I 11778] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:13:16.883198 I 11778] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-06-11T12:13:16.883237 I 11778] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:13:16.883255 I 11778] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:13:16.883411 I 11778] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:13:16.885071 I 12425] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 3 term 2 trying to create a new stream to cc node at 127.0.0.1:17782
+[2025-06-11T12:13:16.887194 I 12425] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 3
+[2025-06-11T12:13:16.887240 I 12425] [log_shipping_agent.h:362] thread: 140735322973952 send log item list to replay service of cc node group: 3, term: 2
+[2025-06-11T12:13:16.892854 I 12425] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 3, term: 2 finished, sent 1000 messages, took 5609 microseconds, 0 eagains
+[2025-06-11T12:13:39.122301 I 11811] [log_state.h:887] Removing cc node group, ng:0,term:2
+[2025-06-11T12:13:39.122339 I 11811] [log_state.h:900] Removed cc node group:0
+[2025-06-11T12:13:39.192335 I 11783] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:13:39.192373 I 11783] [log_state.h:834] Updating node group term, ng:0,term:3
+[2025-06-11T12:13:39.192387 I 11783] [log_state.h:875] Create a new leader info
+[2025-06-11T12:13:39.192399 I 11783] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 3 ip: 127.0.0.1 port: 17582 term match? yes
+[2025-06-11T12:13:39.192409 I 11783] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17582
+[2025-06-11T12:13:39.192420 I 11783] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:13:39.193933 I 11783] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-06-11T12:13:39.193964 I 11783] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:13:39.193975 I 11783] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:13:39.194120 I 12464] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 3 trying to create a new stream to cc node at 127.0.0.1:17582
+[2025-06-11T12:13:39.194198 I 11783] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:13:39.194891 I 12464] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-06-11T12:13:39.194923 I 12464] [log_shipping_agent.h:362] thread: 140735314581248 send log item list to replay service of cc node group: 0, term: 3
+[2025-06-11T12:13:39.197568 I 12464] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 3 finished, sent 2001 messages, took 2640 microseconds, 0 eagains
+[2025-06-11T12:13:39.340958 I 11811] [log_state.h:887] Removing cc node group, ng:0,term:3
+[2025-06-11T12:13:39.340997 I 11811] [log_state.h:900] Removed cc node group:0
+[2025-06-11T12:13:49.611533 I 11782] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:13:49.611580 I 11782] [log_state.h:834] Updating node group term, ng:0,term:2
+[2025-06-11T12:13:49.611598 I 11782] [log_state.h:875] Create a new leader info
+[2025-06-11T12:13:49.611609 I 11782] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 0 term: 2 ip: 127.0.0.1 port: 17882 term match? yes
+[2025-06-11T12:13:49.611622 I 11782] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17882
+[2025-06-11T12:13:49.611635 I 11782] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:13:49.613590 I 11782] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-06-11T12:13:49.613626 I 11782] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:13:49.613636 I 11782] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:13:49.613853 I 12699] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 0 term 2 trying to create a new stream to cc node at 127.0.0.1:17882
+[2025-06-11T12:13:49.615094 I 12699] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 0
+[2025-06-11T12:13:49.615134 I 12699] [log_shipping_agent.h:362] thread: 140736188106496 send log item list to replay service of cc node group: 0, term: 2
+[2025-06-11T12:13:49.617782 I 12699] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 0, term: 2 finished, sent 2001 messages, took 2644 microseconds, 0 eagains
+[2025-06-11T12:13:49.627125 I 11782] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:14:24.777447 I 11776] [log_state.h:887] Removing cc node group, ng:1,term:2
+[2025-06-11T12:14:24.777493 I 11776] [log_state.h:900] Removed cc node group:1
+[2025-06-11T12:14:24.806977 I 11811] [log_state.h:887] Removing cc node group, ng:1,term:-1
+[2025-06-11T12:14:24.807018 I 11811] [log_state.h:921] Not found cc node group to remove
+[2025-06-11T12:14:24.862406 I 11783] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:14:24.862452 I 11783] [log_state.h:834] Updating node group term, ng:1,term:3
+[2025-06-11T12:14:24.862466 I 11783] [log_state.h:875] Create a new leader info
+[2025-06-11T12:14:24.862478 I 11783] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 3 ip: 127.0.0.1 port: 17682 term match? yes
+[2025-06-11T12:14:24.862490 I 11783] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17682
+[2025-06-11T12:14:24.862501 I 11783] [log_instance.cpp:851] start replaying from ts 0
+[2025-06-11T12:14:24.863425 I 11783] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-06-11T12:14:24.863456 I 11783] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:14:24.863468 I 11783] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:14:24.864197 I 11783] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:14:24.865653 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:24.909512 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:25.921499 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:25.922971 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:26.924796 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:26.926158 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:27.926345 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:27.928072 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:28.928208 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:28.930569 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:29.930842 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:29.932173 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:30.932298 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:30.936476 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:31.936601 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:31.937050 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:32.937162 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:32.943236 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:33.944793 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:33.946053 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:34.948158 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:34.949520 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:35.949630 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:35.951155 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:36.951784 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:36.952102 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:37.952205 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:37.960808 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:38.962810 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:38.963200 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:39.095041 I 11776] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:14:39.095085 I 11776] [log_state.h:834] Updating node group term, ng:1,term:2
+[2025-06-11T12:14:39.095100 I 11776] [log_state.h:869] Nothing to update
+[2025-06-11T12:14:39.095113 I 11776] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 1 term: 2 ip: 127.0.0.1 port: 17982 term match? no
+[2025-06-11T12:14:39.095124 I 11776] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:14:39.964798 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:39.965399 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:40.971798 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:40.974490 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:41.974627 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:41.975003 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:42.975980 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:42.977182 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:43.978132 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:43.978988 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:44.979102 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:44.981864 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:45.985785 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:45.988464 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:46.990869 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:46.991344 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:47.991463 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:47.993979 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:48.994127 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:48.995399 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:49.996311 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:49.998754 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:51.000183 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:51.004657 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:52.004817 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:52.007982 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:53.008683 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:53.014926 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:54.015056 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:54.015408 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:55.015524 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:55.016139 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:56.016261 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:56.032899 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:57.033031 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:57.050485 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:58.051126 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:58.072029 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:14:59.072154 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:14:59.072598 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:00.075788 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:00.076090 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:01.076205 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:01.078526 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:02.087788 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:02.093982 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:03.094087 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:03.109400 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:04.109527 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:04.110102 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:05.131378 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:05.132010 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:06.146795 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:06.152987 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:07.153105 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:07.167196 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:08.167327 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:08.168820 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:09.170475 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:09.172022 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:10.172139 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:10.175490 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:11.175608 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:11.177865 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:12.177982 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:12.181876 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:13.182785 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:13.183104 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:14.183208 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:14.185187 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:15.188800 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:15.226082 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:16.226213 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:16.226972 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:17.227082 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:17.239109 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:18.239902 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:18.247241 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:19.249419 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:19.250074 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:20.253787 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:20.264665 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:21.264815 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:21.265153 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:22.266789 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:22.272066 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:23.276790 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:23.291442 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:24.295894 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:24.310844 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:25.338789 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:25.371793 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:26.372588 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:26.375872 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:27.381836 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:27.393991 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:28.394121 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:28.413002 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:29.422797 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:29.423460 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:30.423565 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:30.425050 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:31.440129 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:31.440415 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:32.440538 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:32.445147 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:33.446357 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:33.451890 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:34.488796 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:34.489182 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:35.489302 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:35.521312 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:36.536228 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:36.554255 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:37.554384 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:37.574050 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:38.574162 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:38.616050 W 11782] [input_messenger.cpp:376] Fail to read from Socket{id=425 fd=21 remote addr=127.0.0.1:17682 local addr=127.0.0.1:53502:53502} (0x7fff78001040): Connection reset by peer [104]
+[2025-06-11T12:15:38.617709 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:38.628516 I 11811] [log_instance.cpp:819] Received ReplayLogRequest.
+[2025-06-11T12:15:38.628552 I 11811] [log_state.h:834] Updating node group term, ng:2,term:3
+[2025-06-11T12:15:38.628564 I 11811] [log_state.h:848] Update leader_info.term_:2 to: 3
+[2025-06-11T12:15:38.628575 I 11811] [log_state.h:850] Update leader_info.leader_ip_127.0.0.1 to: 127.0.0.1
+[2025-06-11T12:15:38.628585 I 11811] [log_state.h:852] Update leader_info.leader_port_17682 to: 17782
+[2025-06-11T12:15:38.628597 I 11811] [log_instance.cpp:834] ReplayLogRequest cc_ng_id: 2 term: 3 ip: 127.0.0.1 port: 17782 term match? yes
+[2025-06-11T12:15:38.628607 I 11811] [log_instance.cpp:841] shipping log records to: 127.0.0.1 17782
+[2025-06-11T12:15:38.628618 I 11811] [log_instance.cpp:851] start replaying from ts 1749644131646410
+[2025-06-11T12:15:38.631502 I 11811] [log_state_rocksdb_impl.cpp:84] cluster_scale_list size: 1
+[2025-06-11T12:15:38.632419 I 11811] [log_state_rocksdb_impl.cpp:88] schema_log_list size: 0
+[2025-06-11T12:15:38.632444 I 11811] [log_state_rocksdb_impl.cpp:92] split_range_op_list size: 0
+[2025-06-11T12:15:38.632565 I 12961] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 2 term 3 trying to create a new stream to cc node at 127.0.0.1:17782
+[2025-06-11T12:15:38.633194 I 12961] [log_shipping_agent.h:104] log group 0 shipping agent starts shipping replay log records to cc node group 2
+[2025-06-11T12:15:38.633226 I 12961] [log_shipping_agent.h:362] thread: 140736179713792 send log item list to replay service of cc node group: 2, term: 3
+[2025-06-11T12:15:38.633329 I 12961] [log_shipping_agent.h:261] LogShippingAgent shipping replay log records to cc node group: 2, term: 3 finished, sent 1 messages, took 102 microseconds, 0 eagains
+[2025-06-11T12:15:38.639717 I 11811] [log_instance.cpp:909] Set response status to LogResponse_ResponseStatus_Success
+[2025-06-11T12:15:38.719980 I 11808] [socket.cpp:2855] Checking Socket{id=425 remote addr=127.0.0.1:17682 local addr=0.0.0.0:0} (0x7fff78001040)
+[2025-06-11T12:15:39.617805 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:39.618067 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:39.681406 I 11808] [socket.cpp:2855] Checking Socket{id=595 remote addr=127.0.0.1:17782 local addr=0.0.0.0:0} (0x7fff74001040)
+[2025-06-11T12:15:40.614475 I 11808] [socket.cpp:2855] Checking Socket{id=765 remote addr=127.0.0.1:17882 local addr=0.0.0.0:0} (0x7fff80084dc0)
+[2025-06-11T12:15:40.618809 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:40.618923 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682
+[2025-06-11T12:15:41.619027 I 12737] [log_shipping_agent.h:211] Log shipping agent from log group 0 to cc node group 1 term 3 trying to create a new stream to cc node at 127.0.0.1:17682
+[2025-06-11T12:15:41.619161 E 12737] [log_shipping_agent.h:239] Log shipping agent of the log group #0 fails to establish the stream to the cc node at 127.0.0.1:17682

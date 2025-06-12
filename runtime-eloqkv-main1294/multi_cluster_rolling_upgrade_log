@@ -1,0 +1,255 @@
+2025-06-11 12:12:29 - root - INFO - Initialize ClusterScaleTEstData
+2025-06-11 12:12:29 - root - INFO - rocksdbcloud cleanup: s3 bucket eloq-test-1749641937484 not exists
+2025-06-11 12:12:29 - root - INFO - Bootstrapping
+2025-06-11 12:12:34 - root - INFO - Found the process of EloqDssServer. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/eloq_dss/eloqdss_server.log) to determine success if you are debugging.)
+2025-06-11 12:12:34 - root - INFO - EloqDssServer not start, waitting
+2025-06-11 12:12:35 - root - INFO - EloqDssServer not start, waitting
+2025-06-11 12:12:36 - root - INFO - EloqDssServer connected
+2025-06-11 12:12:37 - root - INFO - Found the process of LogServer id: 0. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log) to determine success if you are debugging.)
+2025-06-11 12:12:37 - root - INFO - build redis config for node 1, ng_replica_num=3
+2025-06-11 12:12:37 - root - INFO - build redis config for node 2, ng_replica_num=3
+2025-06-11 12:12:37 - root - INFO - build redis config for node 3, ng_replica_num=3
+2025-06-11 12:12:38 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-06-11 12:12:41 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-06-11 12:12:44 - root - INFO - Found the process of Server id: 3. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node3_log) to determine success if you are debugging.)
+2025-06-11 12:12:46 - root - INFO - Cleaning up resources
+2025-06-11 12:12:46 - root - INFO - Closed connection to Redis server id: 1
+2025-06-11 12:12:46 - root - INFO - Try to stop Node id 1, its process id is 11593
+2025-06-11 12:12:46 - root - INFO - Node 1 is still running after 0, try to kill the process 11593
+2025-06-11 12:12:47 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-06-11 12:12:47 - root - INFO - Closed connection to Redis server id: 2
+2025-06-11 12:12:47 - root - INFO - Try to stop Node id 2, its process id is 11650
+2025-06-11 12:12:47 - root - INFO - Node 2 is still running after 0, try to kill the process 11650
+2025-06-11 12:12:48 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-06-11 12:12:48 - root - INFO - Closed connection to Redis server id: 3
+2025-06-11 12:12:48 - root - INFO - Try to stop Node id 3, its process id is 11710
+2025-06-11 12:12:48 - root - INFO - Node 3 is still running after 0, try to kill the process 11710
+2025-06-11 12:12:49 - root - INFO - Used about 1s to find Node id 3 crashes
+2025-06-11 12:12:50 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-06-11 12:12:50 - root - INFO - stopping external eloq-dss-server
+2025-06-11 12:12:50 - root - INFO - Used about 0s to find EloqDssServer crashes
+2025-06-11 12:12:50 - root - INFO - rocksdbcloud bucket#eloq-test-1749641937484 has been cleaned up.
+2025-06-11 12:12:51 - root - INFO - Found the process of LogServer id: 0. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/log_service/node0_log) to determine success if you are debugging.)
+2025-06-11 12:12:52 - root - INFO - Found the process of EloqDssServer. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/eloq_dss/eloqdss_server.log) to determine success if you are debugging.)
+2025-06-11 12:12:52 - root - INFO - EloqDssServer not start, waitting
+2025-06-11 12:12:53 - root - INFO - EloqDssServer not start, waitting
+2025-06-11 12:12:54 - root - INFO - EloqDssServer connected
+2025-06-11 12:12:54 - root - INFO - Bootstrapping
+2025-06-11 12:12:59 - root - INFO - starting nodes
+2025-06-11 12:12:59 - root - INFO - Closed connection to Redis server id: 1
+2025-06-11 12:13:00 - root - INFO - Found the process of Server id: 1. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node1_log) to determine success if you are debugging.)
+2025-06-11 12:13:00 - root - INFO - starting nodes
+2025-06-11 12:13:00 - root - INFO - Closed connection to Redis server id: 2
+2025-06-11 12:13:01 - root - INFO - Found the process of Server id: 2. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node2_log) to determine success if you are debugging.)
+2025-06-11 12:13:01 - root - INFO - starting nodes
+2025-06-11 12:13:01 - root - INFO - Closed connection to Redis server id: 3
+2025-06-11 12:13:02 - root - INFO - Found the process of Server id: 3. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node3_log) to determine success if you are debugging.)
+2025-06-11 12:13:02 - root - INFO - wait for connectting to node 1
+2025-06-11 12:13:04 - root - INFO - wait for connectting to node 1
+2025-06-11 12:13:06 - root - INFO - connectted to node 1
+2025-06-11 12:13:06 - root - INFO - connectted to node 2
+2025-06-11 12:13:06 - root - INFO - connectted to node 3
+2025-06-11 12:13:06 - root - INFO - -------Testing cluster scale rolling upgrade-----------
+2025-06-11 12:13:13 - root - INFO - AddNode Unique id = cluster_id#72b347b0-46bd-11f0-8c1a-d61064555e63
+2025-06-11 12:13:13 - root - INFO - Scale event has now reached cluster config stage. Starting new node-4...
+2025-06-11 12:13:13 - root - INFO - nodes = 4, new_nodes = 1, redis_port=7779,tx_port=17779
+2025-06-11 12:13:13 - root - INFO - build redis config for node 4, ng_replica_num=3
+2025-06-11 12:13:14 - root - INFO - Found the process of Server id: 4. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node4_log) to determine success if you are debugging.)
+2025-06-11 12:13:15 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7779. Connection refused.
+2025-06-11 12:13:16 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7779. Connection refused.
+2025-06-11 12:13:16 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7779. Connection refused.
+2025-06-11 12:13:17 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
+2025-06-11 12:13:30 - root - INFO - Cluster scale add-node-3 is finished.
+2025-06-11 12:13:37 - root - INFO - RemoveNode Unique id = cluster_id#80aee054-46bd-11f0-8c1a-d61064555e63
+2025-06-11 12:13:40 - root - INFO - Closed connection to Redis server id: 1
+2025-06-11 12:13:40 - root - INFO - Closed connection to Redis server id: 1
+2025-06-11 12:13:40 - root - INFO - Closed connection to Redis server id: 1
+2025-06-11 12:13:40 - root - INFO - Closed connection to Redis server id: 1
+2025-06-11 12:13:40 - root - INFO - Closed connection to Redis server id: 1
+2025-06-11 12:13:40 - root - INFO - Try to stop Node id 1, its process id is 12035
+2025-06-11 12:13:40 - root - INFO - Node 1 is still running after 0, try to kill the process 12035
+2025-06-11 12:13:41 - root - INFO - Used about 1s to find Node id 1 crashes
+2025-06-11 12:13:46 - root - INFO - Cluster scale remove-node-1 is finished.
+2025-06-11 12:13:46 - root - INFO - AddNode Unique id = cluster_id#866c2b5a-46bd-11f0-8c1a-d61064555e63
+2025-06-11 12:13:46 - root - INFO - Scale event has now reached cluster config stage. Starting new node-5...
+2025-06-11 12:13:46 - root - INFO - nodes = 5, new_nodes = 1, redis_port=7879,tx_port=17879
+2025-06-11 12:13:46 - root - INFO - build redis config for node 5, ng_replica_num=3
+2025-06-11 12:13:47 - root - INFO - Found the process of Server id: 5. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node5_log) to determine success if you are debugging.)
+2025-06-11 12:13:48 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7879. Connection refused.
+2025-06-11 12:13:49 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7879. Connection refused.
+2025-06-11 12:13:49 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7879. Connection refused.
+2025-06-11 12:13:50 - root - INFO - New nodes have been added into the cluster. Now starting to migrate data...
+2025-06-11 12:14:10 - root - INFO - Cluster scale add-node-4 is finished.
+2025-06-11 12:14:22 - root - INFO - RemoveNode Unique id = cluster_id#9bd1a5ec-46bd-11f0-8c1a-d61064555e63
+2025-06-11 12:14:25 - root - INFO - Closed connection to Redis server id: 2
+2025-06-11 12:14:25 - root - INFO - Try to stop Node id 2, its process id is 12092
+2025-06-11 12:14:25 - root - INFO - Node 2 is still running after 0, try to kill the process 12092
+2025-06-11 12:14:26 - root - INFO - Used about 1s to find Node id 2 crashes
+2025-06-11 12:14:36 - root - INFO - Cluster scale remove-node-2 is finished.
+2025-06-11 12:14:36 - root - INFO - AddNode Unique id = cluster_id#a3d86e9c-46bd-11f0-8c1a-d61064555e63
+2025-06-11 12:14:36 - root - INFO - Scale event has now reached cluster config stage. Starting new node-6...
+2025-06-11 12:14:36 - root - INFO - nodes = 6, new_nodes = 1, redis_port=7979,tx_port=17979
+2025-06-11 12:14:36 - root - INFO - build redis config for node 6, ng_replica_num=3
+2025-06-11 12:14:37 - root - INFO - Found the process of Server id: 6. (Note this doesn't necessarily mean Server has been successfully started, please use the log (/tmp/build/dce06a3d/eloq_test_src/runtime/node6_log) to determine success if you are debugging.)
+2025-06-11 12:14:38 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:38 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:39 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:39 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:40 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:40 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:41 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:41 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:42 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:42 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:43 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:43 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:44 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:44 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:45 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:45 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:46 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:46 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:47 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:47 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:48 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:48 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:49 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:49 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:50 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:50 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:51 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:51 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:52 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:52 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:53 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:53 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:54 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:54 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:55 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:55 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:56 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:56 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:57 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:57 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:58 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:58 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:59 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:14:59 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:00 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:00 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:01 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:01 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:02 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:02 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:03 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:03 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:04 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:04 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:05 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:05 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:06 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:06 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:07 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:07 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:08 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:08 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:09 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:09 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:10 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:10 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:11 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:11 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:12 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:12 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:13 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:13 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:14 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:14 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:15 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:15 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:16 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:16 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:17 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:17 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:18 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:18 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:19 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:19 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:20 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:20 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:21 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:21 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:22 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:23 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:23 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:24 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:24 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:25 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:25 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:26 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:26 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:27 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:27 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:28 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:28 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:29 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:29 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:30 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:30 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:31 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:31 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:32 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:32 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:33 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:33 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:34 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:34 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:35 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:35 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:36 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:36 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:37 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:37 - root - INFO - Ping exception in cluster: Error 111 connecting to 127.0.0.1:7979. Connection refused.
+2025-06-11 12:15:38 - root - INFO - Closed connection to Redis server id: 3
+2025-06-11 12:15:38 - root - INFO - Try to stop Node id 3, its process id is 12149
+2025-06-11 12:15:38 - root - INFO - Node 3 is still running after 0, try to kill the process 12149
+2025-06-11 12:15:39 - root - INFO - Used about 1s to find Node id 3 crashes
+2025-06-11 12:15:39 - root - INFO - Closed connection to Redis server id: 4
+2025-06-11 12:15:39 - root - INFO - Closed connection to Redis server id: 4
+2025-06-11 12:15:39 - root - INFO - Closed connection to Redis server id: 4
+2025-06-11 12:15:39 - root - INFO - Closed connection to Redis server id: 4
+2025-06-11 12:15:39 - root - INFO - Closed connection to Redis server id: 4
+2025-06-11 12:15:39 - root - INFO - Try to stop Node id 4, its process id is 12329
+2025-06-11 12:15:39 - root - INFO - Node 4 is still running after 0, try to kill the process 12329
+2025-06-11 12:15:40 - root - INFO - Used about 1s to find Node id 4 crashes
+2025-06-11 12:15:40 - root - INFO - Closed connection to Redis server id: 5
+2025-06-11 12:15:40 - root - INFO - Closed connection to Redis server id: 5
+2025-06-11 12:15:40 - root - INFO - Closed connection to Redis server id: 5
+2025-06-11 12:15:40 - root - INFO - Closed connection to Redis server id: 5
+2025-06-11 12:15:40 - root - INFO - Closed connection to Redis server id: 5
+2025-06-11 12:15:40 - root - INFO - Try to stop Node id 5, its process id is 12602
+2025-06-11 12:15:40 - root - INFO - Node 5 is still running after 0, try to kill the process 12602
+2025-06-11 12:15:41 - root - INFO - Used about 1s to find Node id 5 crashes
+2025-06-11 12:15:41 - root - INFO - Try to stop Node id 6, its process id is 12864
+2025-06-11 12:15:41 - root - INFO - Node 6 is still running after 0, try to kill the process 12864
+2025-06-11 12:15:42 - root - INFO - Used about 1s to find Node id 6 crashes
+2025-06-11 12:15:42 - root - INFO - stop logservice nodes
+2025-06-11 12:15:42 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-06-11 12:15:42 - root - INFO - stop external eloq-dss-server
+2025-06-11 12:15:42 - root - INFO - Used about 0s to find EloqDssServer crashes
+2025-06-11 12:15:42 - root - INFO - Cleaning up resources
+2025-06-11 12:15:42 - root - INFO - Closed connection to Redis server id: 3
+2025-06-11 12:15:42 - root - INFO - Closed connection to Redis server id: 4
+2025-06-11 12:15:42 - root - INFO - Closed connection to Redis server id: 4
+2025-06-11 12:15:42 - root - INFO - Closed connection to Redis server id: 4
+2025-06-11 12:15:42 - root - INFO - Closed connection to Redis server id: 4
+2025-06-11 12:15:42 - root - INFO - Closed connection to Redis server id: 4
+2025-06-11 12:15:42 - root - INFO - Closed connection to Redis server id: 5
+2025-06-11 12:15:42 - root - INFO - Closed connection to Redis server id: 5
+2025-06-11 12:15:42 - root - INFO - Closed connection to Redis server id: 5
+2025-06-11 12:15:42 - root - INFO - Closed connection to Redis server id: 5
+2025-06-11 12:15:42 - root - INFO - Closed connection to Redis server id: 5
+2025-06-11 12:15:43 - root - INFO - Used about 0s to find LogService Node id 0 crashes
+2025-06-11 12:15:43 - root - INFO - stopping external eloq-dss-server
+2025-06-11 12:15:43 - root - INFO - Used about 0s to find EloqDssServer crashes
+2025-06-11 12:15:43 - root - INFO - rocksdbcloud bucket#eloq-test-1749641937484 has been cleaned up.

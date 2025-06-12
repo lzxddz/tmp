@@ -1,0 +1,128 @@
+
+   _____  _                _  ____     __ 
+  | ____|| |  ___    __ _ | |/ /\ \   / / 
+  |  _|  | | / _ \  / _` || ' /  \ \ / /  
+  | |___ | || (_) || (_| || . \   \ V /   
+  |_____||_| \___/  \__, ||_|\_\   \_/    
+                       |_|               
+  
+* Welcome to use EloqKV(v0.8.17).
+* Running logs will be written to the following path:
+
+* The above log path can be specified by arg --log_dir.
+* You can also run with [--help] for all available flags.
+
+Starting EloqKV Server...
+[2025-06-11T12:14:36.160717 I 12864] [redis_server.cpp:74] Starting EloqKV Server ...
+[2025-06-11T12:14:36.162031 I 12864] [redis_service.cpp:423] Set maxclients: 10000
+[2025-06-11T12:14:36.162357 I 12864] [redis_service.cpp:706] Local server ip port: 127.0.0.1:7979
+[2025-06-11T12:14:36.185813 I 12864] [util.h:378] Successfully loaded cluster config from file with version 1749644076009979
+[2025-06-11T12:14:36.185861 I 12864] [redis_service.cpp:822] ng_id: 2
+[2025-06-11T12:14:36.185873 I 12864] [redis_service.cpp:825] node_id: 2, host_name: 127.0.0.1, port: 17679
+[2025-06-11T12:14:36.185883 I 12864] [redis_service.cpp:825] node_id: 3, host_name: 127.0.0.1, port: 17779
+[2025-06-11T12:14:36.185894 I 12864] [redis_service.cpp:825] node_id: 4, host_name: 127.0.0.1, port: 17879
+[2025-06-11T12:14:36.185902 I 12864] [redis_service.cpp:822] ng_id: 3
+[2025-06-11T12:14:36.185911 I 12864] [redis_service.cpp:825] node_id: 3, host_name: 127.0.0.1, port: 17779
+[2025-06-11T12:14:36.185921 I 12864] [redis_service.cpp:825] node_id: 2, host_name: 127.0.0.1, port: 17679
+[2025-06-11T12:14:36.185930 I 12864] [redis_service.cpp:825] node_id: 4, host_name: 127.0.0.1, port: 17879
+[2025-06-11T12:14:36.185940 I 12864] [redis_service.cpp:822] ng_id: 0
+[2025-06-11T12:14:36.185950 I 12864] [redis_service.cpp:825] node_id: 4, host_name: 127.0.0.1, port: 17879
+[2025-06-11T12:14:36.185961 I 12864] [redis_service.cpp:825] node_id: 2, host_name: 127.0.0.1, port: 17679
+[2025-06-11T12:14:36.185971 I 12864] [redis_service.cpp:825] node_id: 3, host_name: 127.0.0.1, port: 17779
+[2025-06-11T12:14:36.185981 I 12864] [redis_service.cpp:822] ng_id: 1
+[2025-06-11T12:14:36.185990 I 12864] [redis_service.cpp:825] node_id: 5, host_name: 127.0.0.1, port: 17979
+[2025-06-11T12:14:36.185999 I 12864] [redis_service.cpp:825] node_id: 3, host_name: 127.0.0.1, port: 17779
+[2025-06-11T12:14:36.186009 I 12864] [redis_service.cpp:825] node_id: 2, host_name: 127.0.0.1, port: 17679
+[2025-06-11T12:14:36.186071 E 12864] [data_store_service_config.cpp:418] Failed to parse INI file: /tmp/build/dce06a3d/eloq_test_src/runtime/data_store_config_6.ini
+[2025-06-11T12:14:36.199666 I 12864] [data_store_service.cpp:1686] FetchDSSClusterConfig, DSSNode: 127.0.0.1:9100
+[2025-06-11T12:14:36.223941 I 12864] [server.cpp:1129] Server[EloqDS::DataStoreService] is serving on port=17986.
+[2025-06-11T12:14:36.223986 I 12864] [server.cpp:1132] Check out http://7f426fa2-da6e-4cf5-7e91-aa5267fb0738:17986 in web browser.
+[2025-06-11T12:14:36.224512 I 12864] [data_store_service.cpp:266] DataStoreService started on port 17986
+[2025-06-11T12:14:36.224674 I 12864] [data_store_service_client.h:79] AppendPreBuiltTable: __sequence_table
+[2025-06-11T12:14:36.224869 I 12864] [data_store_service_config.cpp:598] DataStoreService channel updated to  shard_id: 0 node: 127.0.0.1:9100
+[2025-06-11T12:14:36.227743 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_15, catalog_image: data_table_15
+[2025-06-11T12:14:36.229810 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_14, catalog_image: data_table_14
+[2025-06-11T12:14:36.230093 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_12, catalog_image: data_table_12
+[2025-06-11T12:14:36.230340 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:__sequence_table, catalog_image: __sequence_table
+[2025-06-11T12:14:36.230569 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_5, catalog_image: data_table_5
+[2025-06-11T12:14:36.236964 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_1, catalog_image: data_table_1
+[2025-06-11T12:14:36.238291 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_2, catalog_image: data_table_2
+[2025-06-11T12:14:36.240929 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_7, catalog_image: data_table_7
+[2025-06-11T12:14:36.241242 I 12876] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_3, catalog_image: data_table_3
+[2025-06-11T12:14:36.241532 I 12876] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_8, catalog_image: data_table_8
+[2025-06-11T12:14:36.243079 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_6, catalog_image: data_table_6
+[2025-06-11T12:14:36.243366 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_11, catalog_image: data_table_11
+[2025-06-11T12:14:36.243593 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_13, catalog_image: data_table_13
+[2025-06-11T12:14:36.243803 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_0, catalog_image: data_table_0
+[2025-06-11T12:14:36.245121 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_9, catalog_image: data_table_9
+[2025-06-11T12:14:36.246798 I 12877] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_4, catalog_image: data_table_4
+[2025-06-11T12:14:36.250260 I 12876] [data_store_service_client_closure.cpp:288] FetchTableCallback, key:data_table_10, catalog_image: data_table_10
+[2025-06-11T12:14:36.250339 I 12864] [redis_service.cpp:1240] enable_metrics: OFF
+[2025-06-11T12:14:36.281742 I 12864] [local_cc_shards.cpp:238] Data sync work memory usage quota: 157286400
+[2025-06-11T12:14:36.281917 I 12864] [checkpointer.cpp:80] checkpointer init, checkpoint_interval_: 10 ,ckpt_delay_seconds: 0
+[2025-06-11T12:14:36.282279 I 12864] [sharder.cpp:210] txlog_port = 9000
+[2025-06-11T12:14:36.282328 I 12864] [log_util.h:144] Dump LogRaftGroupConfig: 
+[2025-06-11T12:14:36.282342 I 12864] [log_util.h:153] log_group_id: 0 ,group_name:  lg0 ,group_conf: 127.0.0.1:9000:0 ,group_nodes: 0:
+[2025-06-11T12:14:36.290534 I 12864] [server.cpp:1129] Server[txservice::remote::CcNodeService] is serving on port=17980.
+[2025-06-11T12:14:36.290575 I 12864] [server.cpp:1132] Check out http://7f426fa2-da6e-4cf5-7e91-aa5267fb0738:17980 in web browser.
+[2025-06-11T12:14:36.291953 I 12864] [server.cpp:1129] Server[txservice::fault::RecoveryService] is serving on port=17982.
+[2025-06-11T12:14:36.291985 I 12864] [server.cpp:1132] Check out http://7f426fa2-da6e-4cf5-7e91-aa5267fb0738:17982 in web browser.
+[2025-06-11T12:14:36.291996 I 12864] [sharder.cpp:329] Forking host manager process with /tmp/build/dce06a3d/redis_src/cmake/install/bin/host_manager, the hm will be listening on 0.0.0.0:17983
+[2025-06-11T12:14:36.301651 I 12864] [sharder.cpp:371] Spawned host manager process with PID: 12891
+[2025-06-11T12:14:36.415656 I 12864] [tx_start_ts_collector.cpp:49] TxStartTsCollector init, interval seconds: 0
+[2025-06-11T12:14:36.417982 I 12864] [server.cpp:1129] Server[txservice::remote::CcStreamReceiver] is serving on port=17979.
+[2025-06-11T12:14:36.418016 I 12864] [server.cpp:1132] Check out http://7f426fa2-da6e-4cf5-7e91-aa5267fb0738:17979 in web browser.
+[2025-06-11T12:14:36.419181 E 12864] [cc_stream_sender.cpp:189] Trying to connect to an unknown remote node. Node Id: 1
+[2025-06-11T12:14:36.419226 E 12864] [cc_stream_sender.cpp:189] Trying to connect to an unknown remote node. Node Id: 0
+[2025-06-11T12:14:36.420167 I 12889] [cc_stream_sender.cpp:823] Establish the cc stream to node 5
+[2025-06-11T12:14:36.431169 I 12887] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:4
+[2025-06-11T12:14:36.431267 I 12889] [cc_stream_sender.cpp:823] Establish the cc stream to node 3
+[2025-06-11T12:14:36.433164 I 12887] [sharder.cpp:687] ccnode group ng3 updates leader to node_id:3
+[2025-06-11T12:14:36.433254 I 12889] [cc_stream_sender.cpp:823] Establish the cc stream to node 2
+[2025-06-11T12:14:36.434697 I 12887] [sharder.cpp:687] ccnode group ng2 updates leader to node_id:2
+[2025-06-11T12:14:36.434793 I 12889] [cc_stream_sender.cpp:823] Establish the cc stream to node 4
+[2025-06-11T12:14:36.435067 I 12889] [cc_stream_sender.cpp:865] Establish the long msg cc stream to node 5
+[2025-06-11T12:14:36.435392 I 12889] [cc_stream_sender.cpp:865] Establish the long msg cc stream to node 3
+[2025-06-11T12:14:36.435890 I 12889] [cc_stream_sender.cpp:865] Establish the long msg cc stream to node 2
+[2025-06-11T12:14:36.435948 I 12887] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:4
+[2025-06-11T12:14:36.436868 I 12887] [sharder.cpp:687] ccnode group ng3 updates leader to node_id:3
+[2025-06-11T12:14:36.437176 I 12887] [sharder.cpp:687] ccnode group ng2 updates leader to node_id:2
+[2025-06-11T12:14:36.443218 I 12887] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:4
+[2025-06-11T12:14:36.445039 I 12889] [cc_stream_sender.cpp:865] Establish the long msg cc stream to node 4
+[2025-06-11T12:14:36.445618 I 12887] [sharder.cpp:687] ccnode group ng3 updates leader to node_id:3
+[2025-06-11T12:14:36.446220 I 12887] [sharder.cpp:687] ccnode group ng2 updates leader to node_id:2
+[2025-06-11T12:14:36.451048 I 12887] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:4
+[2025-06-11T12:14:36.451356 I 12887] [sharder.cpp:687] ccnode group ng3 updates leader to node_id:3
+[2025-06-11T12:14:36.451838 I 12887] [sharder.cpp:687] ccnode group ng2 updates leader to node_id:2
+[2025-06-11T12:14:37.419375 E 12864] [cc_stream_sender.cpp:189] Trying to connect to an unknown remote node. Node Id: 1
+[2025-06-11T12:14:37.425886 I 12887] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:4
+[2025-06-11T12:14:37.428993 I 12887] [sharder.cpp:687] ccnode group ng3 updates leader to node_id:3
+[2025-06-11T12:14:37.430649 I 12887] [sharder.cpp:687] ccnode group ng2 updates leader to node_id:2
+[2025-06-11T12:14:37.433017 I 12887] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:4
+[2025-06-11T12:14:37.434643 I 12887] [sharder.cpp:687] ccnode group ng3 updates leader to node_id:3
+[2025-06-11T12:14:37.435114 I 12887] [sharder.cpp:687] ccnode group ng2 updates leader to node_id:2
+[2025-06-11T12:14:38.419651 E 12864] [cc_stream_sender.cpp:189] Trying to connect to an unknown remote node. Node Id: 1
+[2025-06-11T12:14:38.430298 I 12887] [sharder.cpp:687] ccnode group ng0 updates leader to node_id:4
+[2025-06-11T12:14:38.434191 I 12887] [sharder.cpp:687] ccnode group ng3 updates leader to node_id:3
+[2025-06-11T12:14:38.434583 I 12887] [sharder.cpp:687] ccnode group ng2 updates leader to node_id:2
+[2025-06-11T12:14:39.077203 I 12877] [cc_node.cpp:347] CC node 5 becomes the leader of ng#1. Term: 2
+[2025-06-11T12:14:39.086840 I 12877] [sharder.cpp:687] ccnode group ng1 updates leader to node_id:5
+[2025-06-11T12:14:46.287374 I 12883] [cc_request.h:2697] ccs 0 memory usage report, committed 58111280, allocated 57673152, frag ratio 0.75 , heap full: 0
+[2025-06-11T12:14:46.287452 I 12883] [cc_request.h:2697] ccs 1 memory usage report, committed 57568512, allocated 57136208, frag ratio 0.75 , heap full: 0
+[2025-06-11T12:14:46.287478 I 12883] [checkpointer.cpp:240] Begin checkpoint with timestamp: 1749644086287119. The memory usage of node is: 112118 KB.
+[2025-06-11T12:14:56.296519 I 12883] [cc_request.h:2697] ccs 0 memory usage report, committed 58111280, allocated 57689632, frag ratio 0.73 , heap full: 0
+[2025-06-11T12:14:56.296569 I 12883] [cc_request.h:2697] ccs 1 memory usage report, committed 57568512, allocated 57136208, frag ratio 0.75 , heap full: 0
+[2025-06-11T12:14:56.296595 I 12883] [checkpointer.cpp:240] Begin checkpoint with timestamp: 1749644096288797. The memory usage of node is: 112134 KB.
+[2025-06-11T12:15:06.299680 I 12883] [cc_request.h:2697] ccs 0 memory usage report, committed 58115120, allocated 57719552, frag ratio 0.68 , heap full: 0
+[2025-06-11T12:15:06.299741 I 12883] [cc_request.h:2697] ccs 1 memory usage report, committed 57568512, allocated 57136208, frag ratio 0.75 , heap full: 0
+[2025-06-11T12:15:06.299782 I 12883] [checkpointer.cpp:240] Begin checkpoint with timestamp: 1749644106297026. The memory usage of node is: 112163 KB.
+[2025-06-11T12:15:16.305953 I 12883] [cc_request.h:2697] ccs 0 memory usage report, committed 58115120, allocated 57746720, frag ratio 0.63 , heap full: 0
+[2025-06-11T12:15:16.306010 I 12883] [cc_request.h:2697] ccs 1 memory usage report, committed 57568512, allocated 57136208, frag ratio 0.75 , heap full: 0
+[2025-06-11T12:15:16.306033 I 12883] [checkpointer.cpp:240] Begin checkpoint with timestamp: 1749644116303835. The memory usage of node is: 112190 KB.
+[2025-06-11T12:15:26.321780 I 12883] [cc_request.h:2697] ccs 0 memory usage report, committed 58115120, allocated 57728128, frag ratio 0.67 , heap full: 0
+[2025-06-11T12:15:26.321836 I 12883] [cc_request.h:2697] ccs 1 memory usage report, committed 57568512, allocated 57136208, frag ratio 0.75 , heap full: 0
+[2025-06-11T12:15:26.321862 I 12883] [checkpointer.cpp:240] Begin checkpoint with timestamp: 1749644126318817. The memory usage of node is: 112172 KB.
+[2025-06-11T12:15:36.361810 I 12883] [cc_request.h:2697] ccs 0 memory usage report, committed 58115120, allocated 57719936, frag ratio 0.68 , heap full: 0
+[2025-06-11T12:15:36.374811 I 12883] [cc_request.h:2697] ccs 1 memory usage report, committed 57568512, allocated 57136208, frag ratio 0.75 , heap full: 0
+[2025-06-11T12:15:36.374876 I 12883] [checkpointer.cpp:240] Begin checkpoint with timestamp: 1749644136322836. The memory usage of node is: 112164 KB.
+[2025-06-11T12:15:38.566962 I 12876] [sharder.cpp:687] ccnode group ng2 updates leader to node_id:3
